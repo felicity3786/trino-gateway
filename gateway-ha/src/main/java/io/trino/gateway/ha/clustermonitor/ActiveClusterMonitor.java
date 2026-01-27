@@ -61,7 +61,7 @@ public class ActiveClusterMonitor
     @PostConstruct
     public void start()
     {
-        log.info("Running cluster monitor with connection task delay of %s", taskDelay);
+        log.info("Running cluster monitor in my OSS fork with connection task delay of %s", taskDelay);
         scheduledExecutor.scheduleAtFixedRate(() -> {
             try {
                 log.info("Getting stats for all clusters");
