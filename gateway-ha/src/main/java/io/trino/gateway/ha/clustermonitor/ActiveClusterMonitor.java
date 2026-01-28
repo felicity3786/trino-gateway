@@ -64,7 +64,7 @@ public class ActiveClusterMonitor
         log.info("Running cluster monitor in my OSS fork with connection task delay of %s", taskDelay);
         scheduledExecutor.scheduleAtFixedRate(() -> {
             try {
-                log.info("Getting stats for all clusters");
+                log.info("Getting stats in my OSS fork for all clusters");
                 List<ProxyBackendConfiguration> allClusters =
                         gatewayBackendManager.getAllBackends();
                 List<Future<ClusterStats>> futures = new ArrayList<>();
